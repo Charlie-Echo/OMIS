@@ -1,0 +1,322 @@
+* {
+ font-size: 100%;
+ font-family: Tahoma;
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:85%;
+}
+
+h1 {
+    display: block;
+    font-size: 1.5em;
+    color: rgb(70,36,86);
+    font-weight: bold;
+}
+
+body {
+  margin:0px;
+  font-family:sans-serif;
+}
+
+div#div_main{
+  position:relative;
+}
+
+div#div_header{
+  padding:0.3em;
+  color:black;
+}
+
+div#div_subhead{
+  position:relative;
+  padding:0.5em;
+}
+
+div#div_content{
+  background-color:white;
+  margin-left:0;
+  margin-right:0;
+  padding:1em;
+  min-height: 400px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(185,152,195);
+}
+
+ul#ul2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(185,152,195);
+  display: flex;
+  justify-content: center;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(70,36,86);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(185,152,195);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: white;
+  background-color: rgb(70,36,86);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropactive{
+  background-color: rgb(70,36,86);
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+    background-color: rgb(70,36,86);
+}
+
+.button1 {
+    background-color: white;
+    border: none;
+    color: rgb(70,36,86);
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: rgb(70,36,86);
+    border: none;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input{
+  margin-bottom:10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    /* text-align: left; */
+    padding: 8px;
+    /* color: rgb(70,36,86); */
+}
+
+table#tb0 {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+table#tb0 th, td {
+    text-align: left;
+    padding: 8px;
+    color: black;
+    border: 1px solid rgb(185,152,195); /*แก้borderเป็น0px ถ้าไม่ต้องการโชว์ขอบตาราง*/
+}
+
+table#tb0 tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+table#tb0 th {
+    background-color: rgb(70,36,86);
+    color: white;
+}
+
+table#tb1{
+  text-align: left;
+  width: auto;
+}
+
+table#tb1 th:nth-child(even) {
+    text-align: left;
+    border: 2px solid rgb(185,152,195);
+    background-color: white;
+    color: black;
+}
+table#tb1 th:nth-child(odd) {
+    text-align: left;
+    border: 2px solid rgb(185,152,195);
+    background-color: rgb(70,36,86);
+    color: white;
+}
+
+table#tb2 {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+table#tb3 {
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+.myButton {
+  background-color:rgb(70,36,86);
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:6px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+.myButton:hover {
+  box-shadow:inset 0px 39px 0px -24px rgb(185,152,195);
+  background-color:rgb(185,152,195);
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+input{
+  margin: 0 auto;
+}
+
+input[type=text] {
+    border: 2px solid rgb(70,36,86);
+    width: 20em;
+    height: 1.5em;
+}
+
+input[type=email] {
+    border: 2px solid rgb(70,36,86);
+    width: 20em;
+    height: 1.5em;
+}
+
+input[type=date] {
+    border: 2px solid rgb(70,36,86);
+    width: 20em;
+    height: 1.5em;
+}
+
+input#in1[type=text] {
+    border: 2px solid rgb(70,36,86);
+    width: 3em;
+    height: 1.5em;
+}
+input#in2[type=text] {
+    border: 2px solid rgb(70,36,86);
+    width: 7em;
+    height: 1.5em;
+}
+input[type=password] {
+    border: 2px solid rgb(70,36,86);
+    width: 20em;
+    height: 1.5em;
+}
+input#in1[type=number] {
+    border: 2px solid rgb(70,36,86);
+    width: 5em;
+    height: 1.5em;
+}
+input#in2[type=number] {
+    border: 2px solid rgb(70,36,86);
+    width: 5em;
+    height: 1.5em;
+}
+/*.pagination {
+  text-align: center;
+}
+.pagination ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(185,152,195);
+}*/
+
+.rotate {
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+
+@media print
+{
+  .noprint {display:none;}
+  table {
+      color: black;
+  }
+  table#tb0 th {
+      color: black;
+  }
+
+  table    { page-break-after: auto; }
+  tr    { page-break-inside:avoid; page-break-after: auto }
+  td    { page-break-inside:avoid; page-break-after: auto }
+  thead { display:table-header-group }
+  tfoot { display:table-footer-group }
+}
